@@ -1,0 +1,17 @@
+body{
+    background-color: grey;
+    text-align: center;
+    color: white;
+}
+
+.nav{
+    color: yellow;
+}
+.nav:visited{
+    color: yellow;
+}
+
+
+.here{
+    color: white;
+}
