@@ -1,15 +1,19 @@
 body{
-    background-color: grey;
+    background-color: #32363a;
     text-align: center;
     color: white;
 }
 
+.stick {
+    position: sticky;
+    top: 0;
+}
 ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #32363a;
   }
   
   li {
@@ -20,15 +24,20 @@ ul.navbar {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
+    margin-bottom: 10%;
   }
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
+    border-radius: 10px;
   }
 
   .here {
     background-color: #04AA6D;
+    border-radius: 10px;
+    margin: 2px;
+
   }
