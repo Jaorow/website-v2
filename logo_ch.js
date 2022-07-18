@@ -1,21 +1,24 @@
 function changeImage() {
-    console.log("changing");
-    
-    var image = document.getElementsByClassName('blink');
-    console.log(image)
-    if (image.src.match("img/logo.png")) {
+    var image = document.getElementById('blink');
+    if (image.src.match("logo.png")) {
         image.src = "img/logo_blink.png";
-        console.log("close");
-    }else {
+    }
+    else {
         image.src = "img/logo.png";
-        console.log("open");
     }
 }
 
 
+function countUp(){
+    count ++;
+    console.log(count);
+
+}
+
 function init() {
     var myFunction = function() {
         changeImage();
+        countUp()
         var rand = Math.round(Math.random() * (3000 - 500)) + 500; // generate new time (between 3sec and 500"s)
         setTimeout(myFunction, rand);
         
@@ -23,4 +26,5 @@ function init() {
     myFunction();
 }
 
+var count = 0;
 init();
