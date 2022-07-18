@@ -2,6 +2,7 @@
     font-family: 'Courier New', Courier, monospace;
     --fonts: 'Courier New', Courier, monospace;
     --main-color: #32363a;
+    --main-trans: #21232640;
     --text-color: white;
 
 
@@ -20,11 +21,9 @@ body{
 
 }
 
-.stick {
-    position: sticky;
-    top: 0;
-}
 
+
+/* navbar stuff */
 ul.navbar {
     list-style-type: none;
     margin: 0;
@@ -33,6 +32,11 @@ ul.navbar {
     background-color: var(--main-color);
     }
 
+    .stick {
+        position: sticky;
+        top: 0;
+    }
+    
     li {
     float: left;
     }
@@ -46,7 +50,6 @@ ul.navbar {
     margin-bottom: 10%;
     }
 
-    /* Change the link color to #111 (black) on hover */
     li a:hover {
     background-color: var(--nav-hover);
     border-radius: 10px;
@@ -67,3 +70,23 @@ ul.navbar {
     .navbar-Logo{
         float: right;
     }
+
+.leftTop{
+    float: left;
+    background-color: var(--main-trans);
+    width: 49%;
+    height:130px;
+    
+}
+.rightTop{
+    float: right;
+    background-color: var(--main-trans);
+    width: 49%;
+    height:130px;
+}
+
+#hero{
+    color: #04AA5C;
+    background-color: var(--main-trans);
+    border-radius: 10px;
+}
