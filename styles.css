@@ -3,7 +3,7 @@
     --fonts: 'Courier New', Courier, monospace;
     --main-color: #32363a;
     --main-trans: #21232640;
-    --text-color: white;
+    --text-color: #ffffff;
 
 
     /* nav bar stuff */
@@ -89,4 +89,13 @@ ul.navbar {
     color: #04AA5C;
     background-color: var(--main-trans);
     border-radius: 10px;
+}
+
+
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
