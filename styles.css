@@ -1,4 +1,6 @@
 :root{
+    font-family: 'Courier New', Courier, monospace;
+    --fonts: 'Courier New', Courier, monospace;
     --main-color: #32363a;
     --text-color: white;
 
@@ -15,6 +17,7 @@ body{
     background-color: var(--main-color);
     text-align: center;
     color: var(--text-color);
+
 }
 
 .stick {
