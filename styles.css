@@ -1,12 +1,20 @@
 :root{
-    
+    --main-color: #32363a;
+    --text-color: white;
+
+
+    /* nav bar stuff */
+    --nav-hover: #111;
+    --nav-here: #04AA6D;
+    /* can change nav-here-hover */
+    --nav-here-hover: #04AA5C;
 
 }
 
 body{
-    background-color: #32363a;
+    background-color: var(--main-color);
     text-align: center;
-    color: white;
+    color: var(--text-color);
 }
 
 .stick {
@@ -19,7 +27,7 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #32363a;
+    background-color: var(--main-color);
     }
 
     li {
@@ -28,7 +36,7 @@ ul.navbar {
 
     li a {
     display: block;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -37,18 +45,18 @@ ul.navbar {
 
     /* Change the link color to #111 (black) on hover */
     li a:hover {
-    background-color: #111;
+    background-color: var(--nav-hover);
     border-radius: 10px;
     }
 
     .here {
-    background-color: #04AA6D;
+    background-color: var(--nav-here);
     border-radius: 10px;
     margin: 2px;
     }
     
     .here:hover{
-        background-color: #04AA5C;
+        background-color: var(--nav-here-hover);
         border-radius: 10px;
         margin: 2px;
     }
