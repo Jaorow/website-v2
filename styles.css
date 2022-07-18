@@ -73,6 +73,12 @@ ul.navbar {
         float: right;
     }
 
+
+
+/* 
+        HERO FLEX BOXING
+*/
+
 .leftTop{    
     float: left;
     background-color: var(--main-trans);
@@ -92,11 +98,31 @@ ul.navbar {
     background-color: var(--main-trans);
     border-radius: 10px;
 }
-/* @media (min-width : 320px) { */
 
-/* #center{padding-top: 25px;} */
+/*    FOR MOBILE PHONES TO DISPLAY FLEX BOXES VERTICLY       */
+@media only screen and (max-width: 600px) {
+   
+    .leftTop{    
 
-/* } */
+        float: left;
+        background-color: var(--main-trans);
+        margin-bottom: 10px;
+        
+        width: 100%;
+        height:130px;
+        
+    }
+    .rightTop{
+        float: right;
+        background-color: var(--main-trans);
+        margin-bottom: 10px;
+        width: 100%;
+        height:130px;
+    }
+   
+
+
+  }
 #canvas {
   display: block;
   width: 100%;
