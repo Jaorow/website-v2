@@ -6,7 +6,7 @@ NOT EVEN CLOSE TO SET UP YET !
 
 ## TODO
 
-- [ ] fix owl changing thing in logo
+- [x] fix owl changing thing in logo
 - [ ] fill pages
 - [ ] flex box stuff 
 - [ ] change owl blink time to be more natural 
