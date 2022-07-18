@@ -90,11 +90,11 @@ ul.navbar {
     background-color: var(--main-trans);
     border-radius: 10px;
 }
-@media (min-width : 320px) {
+/* @media (min-width : 320px) { */
 
-#center{padding-top: 25px;}
+/* #center{padding-top: 25px;} */
 
-}
+/* } */
 #canvas {
   display: block;
   width: 100%;
