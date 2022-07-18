@@ -71,7 +71,7 @@ ul.navbar {
         float: right;
     }
 
-.leftTop{
+.leftTop{    
     float: left;
     background-color: var(--main-trans);
     width: 49%;
@@ -91,7 +91,9 @@ ul.navbar {
     border-radius: 10px;
 }
 
-
+#center{
+    padding-top: 25px;
+}
 
 #canvas {
   display: block;
