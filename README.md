@@ -10,6 +10,8 @@ NOT EVEN CLOSE TO SET UP YET !
 - [ ] fill pages
 - [ ] flex box stuff 
 - [ ] change owl blink time to be more natural 
+- [ ] add second graph thingy when viewport grows beond certian poing
+- [ ] maybe change colours of graph thingy
 
 
 ### NOTES
