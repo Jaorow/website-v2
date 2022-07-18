@@ -31,8 +31,8 @@ let style_width = +getComputedStyle(canvas).getPropertyValue("width").slice(0, -
 canvas.setAttribute('height', style_height * dpi);
 canvas.setAttribute('width', style_width * dpi);
 }
-    
-	var particle_count = 10,
+
+	var particle_count = 30,
 		particles = [],
 		couleurs   = ["#3a0088", "#930077", "#e61c5d","#ffbd39"];
     function Particle()
