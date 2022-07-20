@@ -2,7 +2,7 @@
 
 NOT EVEN CLOSE TO SET UP YET ! 
 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89a31867-a7a7-4980-96fe-906a260a6085/deploy-status)](https://app.netlify.com/sites/jaorow/deploys)
 
 ## TODO
 
