@@ -32,36 +32,57 @@ canvas.setAttribute('height', style_height * dpi);
 canvas.setAttribute('width', style_width * dpi);
 }
 
-	var particle_count = 30,
+	var particle_count = 50
 		particles = [],
-		couleurs   = ["#3a0088", "#930077", "#e61c5d","#ffbd39"];
+        // ""#00eeff"
+		colours   = ["#04AA5C","white","lightblue"];
+
+        // og speeed
+        var acc = 1;
+        
+        var dec = 1;
+
+
     function Particle()
     {
+        
+
 
         this.radius = Math.round((Math.random()*3)+5);
+
+        // spawn location
         this.x = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("width").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
         this.y = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("height").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
-        this.color = couleurs[Math.floor(Math.random()*couleurs.length)];
+
+        // same spawn location below
+        // this.x = 20;
+        // this.y=20;
+
+        // spawn colours
+        this.color = colours[Math.floor(Math.random()*colours.length)];
+
+        // spawn speed
         this.speedx = Math.round((Math.random()*201)+0)/100;
         this.speedy = Math.round((Math.random()*201)+0)/100;
 
-        switch (Math.round(Math.random()*couleurs.length))
+        
+        switch (Math.round(Math.random()*colours.length))
         {
             case 1:
-            this.speedx *= 1;
-            this.speedy *= 1;
+            this.speedx *= acc;
+            this.speedy *= acc;
             break;
             case 2:
-            this.speedx *= -1;
-            this.speedy *= 1;
+            this.speedx *= -dec;
+            this.speedy *= acc;
             break;
             case 3:
-            this.speedx *= 1;
-            this.speedy *= -1;
+            this.speedx *= acc;
+            this.speedy *= -dec;
             break;
             case 4:
-            this.speedx *= -1;
-            this.speedy *= -1;
+            this.speedx *= -dec;
+            this.speedy *= -dec;
             break;
         }
             
