@@ -9,7 +9,7 @@
 - [ ] fill pages
 - [ ] flex box stuff 
 - [ ] change owl blink time to be more natural 
-- [ ] add second graph thingy when viewport grows beond certian poing
+- [ ] add second graph thingy when viewport grows beond certian point
 - [ ] maybe change colours of graph thingy
 
 
