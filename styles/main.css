@@ -161,18 +161,105 @@ ul.navbar {
     ABOUT ME STUFF
 */
 
+
+/* ==============
+    ABOUT ME FOR LARGER SCREEN SIZES
+    from 700px onwards
+================*/
+
+.about-me{
+    height: 800px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-me-circle{
     margin: 10px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: blue;
+    z-index: 0;
 }
 
 .inner-circle{
     padding-top: 10px;
+    /* background-color: black; */
 }
 
+.about-me-cards{
+    background-color: blue;
+}
+
+
+
+#about-me-education{
+    transform: translatex(-250px)
+}
+#about-me-goals{
+    transform: translatex(200px)
+}
+
+#about-me-hobbies{
+    transform: translatex(-250px)
+}
+
+
+
+@media (max-width: 700px) {
+    /* ================
+        ABOUT ME FOR PHONES up to 700px
+    ===================*/
+    .about-me{
+
+        height: 800px;
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me-circle{
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: blue;
+    }
+
+    .inner-circle{
+        padding-top: 10px;
+        /* background-color: black; */
+    }
+
+
+
+    #about-me-education{
+        transform: translatex(0px)
+    }
+
+    #about-me-goals{
+        transform: translatex(0px)
+    }
+    #about-me-hobbies{
+    transform: translatex(0px)
+    }
+
+}
+
+/* 
+kinda a good size for the smaller circles
+border-radius: 50%;
+position: relative;
+margin: 0px 0px 0px 100px;
+
+width: 150px;
+height: 150px;
+background-color: black; 
+
+*/
 
 /* 
         TECH STACK STUFF
@@ -194,6 +281,7 @@ ul.navbar {
     transform: translate(-100%);
     transition: all 1s;
 }
+
 .show{
     opacity: 1;
     filter: blur(0);
