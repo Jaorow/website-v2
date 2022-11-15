@@ -23,7 +23,7 @@ body{
 
 
 @media only screen and (min-width: 900px) {
-    .body { 
+    .pad { 
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -167,9 +167,24 @@ ul.navbar {
     from 700px onwards
 ================*/
 
+.spacer{
+    aspect-ratio: 900/300;
+    width: 102%;
+    transform: translateX(-1%);
+    overflow: hidden;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+.waves1 {
+    background-image: url(/img/waves1.svg);
+}
+.waves2 {
+    background-image: url(/img/waves2.svg);
+}
+
 .about-me{
     height: 800px;
-
     display: grid;
     justify-content: center;
     align-items: center;
@@ -265,9 +280,7 @@ background-color: black;
         TECH STACK STUFF
 */
 
-.tech-stack div{
-    background-color: green;
-}
+
 #tech-logo{
     width: 60px;
 }
