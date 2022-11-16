@@ -36,6 +36,9 @@ body{
 
 
 
+
+
+
 /* navbar stuff */
 ul.navbar {
     list-style-type: none;
@@ -43,6 +46,8 @@ ul.navbar {
     padding: 0;
     overflow: hidden;
     background-color: var(--main-color);
+    border-radius: 10px;
+    margin-top: 5px;
     }
 
     .stick {
@@ -85,6 +90,10 @@ ul.navbar {
     .navbar-Logo{
         float: right;
     }
+
+
+
+
 
 
 
@@ -169,8 +178,8 @@ ul.navbar {
 
 .spacer{
     aspect-ratio: 900/300;
-    width: 102%;
-    transform: translateX(-1%);
+    width: 110%;
+    transform: translateX(-5%);
     overflow: hidden;
     background-repeat: repeat;
     background-position: center;
@@ -184,7 +193,7 @@ ul.navbar {
 }
 
 .about-me{
-    height: 800px;
+    height: 1000px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -211,14 +220,14 @@ ul.navbar {
 
 
 #about-me-education{
-    transform: translatex(-250px)
+    transform: translatex(-250px);    
 }
 #about-me-goals{
-    transform: translatex(200px)
+    transform: translatex(200px);
 }
 
 #about-me-hobbies{
-    transform: translatex(-250px)
+    transform: translatex(-250px);
 }
 
 
@@ -229,7 +238,7 @@ ul.navbar {
     ===================*/
     .about-me{
 
-        height: 800px;
+        height: 1000px;
 
         display: grid;
         justify-content: center;
@@ -252,14 +261,14 @@ ul.navbar {
 
 
     #about-me-education{
-        transform: translatex(0px)
+        transform: translatex(0px);
     }
 
     #about-me-goals{
-        transform: translatex(0px)
+        transform: translatex(0px);
     }
     #about-me-hobbies{
-    transform: translatex(0px)
+    transform: translatex(0px);
     }
 
 }
@@ -280,6 +289,10 @@ background-color: black;
         TECH STACK STUFF
 */
 
+.tech-stack-stack{
+    height: 800px;
+    float:none;
+}
 
 #tech-logo{
     width: 60px;

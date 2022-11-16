@@ -1,6 +1,5 @@
 function websiteVisits(response) {
     document.querySelector("#visits").textContent = response.value;
-    // added 100 views to make myself look popular
 }
 
 function setVisits(number){
