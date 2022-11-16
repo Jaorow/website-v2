@@ -13,12 +13,20 @@
     --nav-here-hover: #04AA5C;
 
 }
+/* html{
+    height: 100%;
+    overflow: hidden;
 
+} */
 body{
     background-color: var(--main-color);
     text-align: center;
     color: var(--text-color);
-    
+
+    /* position: relative;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box; */
 }
 
 
@@ -47,7 +55,8 @@ ul.navbar {
     overflow: hidden;
     background-color: var(--main-color);
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
+    z-index: 100;
     }
 
     .stick {
@@ -117,6 +126,11 @@ ul.navbar {
     border-radius: 10px;
 }
 
+.second-layer-band{
+    padding-top: 145px;
+    
+}
+
 /*    FOR MOBILE PHONES TO DISPLAY FLEX BOXES VERTICLY       */
 @media only screen and (max-width: 600px) {
    
@@ -132,7 +146,11 @@ ul.navbar {
         background-color: var(--main-trans);
         margin-bottom: 10px;
         width: 100%;
-        height:130px;
+        height: 130px;
+        
+    }
+    .second-layer-band{
+        transform: translateY(130px);
     }
 }
 
@@ -160,7 +178,9 @@ ul.navbar {
     ABOUT ME STUFF
 */
 
-
+#about-me-start{
+    transform: translateY(-150px);
+}
 /* ==============
     ABOUT ME FOR LARGER SCREEN SIZES
     from 700px onwards
@@ -317,6 +337,18 @@ background-color: black;
 #footer{
     height: 100px;
 }
+
+
+.flask{
+    border: inset solid 1px black;
+    border-radius: 25%;
+    padding: 8px;
+    background-color: white;
+}
+
+
+
+
 
 /* below is loader... */
 
