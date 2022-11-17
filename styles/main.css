@@ -5,7 +5,6 @@
     --main-trans: #21232640;
     --text-color: #ffffff;
 
-
     /* nav bar stuff */
     --nav-hover: #111;
     --nav-here: #04AA5C;
@@ -115,6 +114,8 @@ ul.navbar {
 }
 
 .second-layer-band{
+    /* background-color: var(--main-trans);
+    border-radius: 10px; */
     padding-top: 150px;
 }
 .third-row-hero{
@@ -147,7 +148,8 @@ ul.navbar {
         margin-left: 1px;
     }
     .third-row-hero{
-        transform: translateY(-50px);
+        transform: translateY(-35px);
+        z-index: 100;
     }
     .second-layer-band{
         transform: translateY(130px);
@@ -183,6 +185,7 @@ ul.navbar {
     display: inline-block;
     width: 60px;
     height: 34px;
+    z-index: 100;
   }
   
   /* Hide default HTML checkbox */
@@ -190,6 +193,7 @@ ul.navbar {
     opacity: 0;
     width: 0;
     height: 0;
+    z-index: 100;
   }
   
   /* The slider */
@@ -262,6 +266,7 @@ ul.navbar {
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
+    z-index: -1;
 }
 
 .waves1 {
