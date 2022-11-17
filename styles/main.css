@@ -13,20 +13,16 @@
     --nav-here-hover: #04AA5C;
 
 }
-/* html{
-    height: 100%;
-    overflow: hidden;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-} */
 body{
     background-color: var(--main-color);
     text-align: center;
     color: var(--text-color);
 
-    /* position: relative;
-    height: 100%;
-    overflow: auto;
-    box-sizing: border-box; */
 }
 
 
@@ -40,12 +36,6 @@ body{
 .hide-bar::-webkit-scrollbar {
     display: none;
   }
-
-
-
-
-
-
 
 /* navbar stuff */
 ul.navbar {
@@ -157,7 +147,7 @@ ul.navbar {
         margin-left: 1px;
     }
     .third-row-hero{
-        transform: translateY(-65px);
+        transform: translateY(-50px);
     }
     .second-layer-band{
         transform: translateY(130px);
@@ -273,6 +263,7 @@ ul.navbar {
     background-position: center;
     background-size: cover;
 }
+
 .waves1 {
     background-image: url(/img/waves1.svg);
     transform: translateY(-120px);
@@ -346,8 +337,6 @@ ul.navbar {
         padding-top: 10px;
         /* background-color: black; */
     }
-
-
 
     #about-me-education{
         transform: translatex(0px);
