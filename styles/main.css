@@ -125,30 +125,45 @@ ul.navbar {
 }
 
 .second-layer-band{
-    padding-top: 145px;
-    
+    padding-top: 150px;
+}
+.third-row-hero{
+    margin-top: 10px;
 }
 
 /*    FOR MOBILE PHONES TO DISPLAY FLEX BOXES VERTICLY       */
-@media only screen and (max-width: 600px) {
-   
+@media only screen and (max-width: 700px) {
     .leftTop{    
-        float: left;
-        background-color: var(--main-trans);
         margin-bottom: 10px;
         width: 100%;
         height:130px;  
     }
     .rightTop{
-        float: right;
-        background-color: var(--main-trans);
         margin-bottom: 10px;
         width: 100%;
         height: 130px;
-        
+    }
+    .third-row-hero-left{
+        float: left;
+        width: 49%;
+        height:130px;
+        margin-left: 1px;
+    }
+
+    .third-row-hero-right{
+        float: right;
+        width: 49%;
+        height:130px;
+        margin-left: 1px;
+    }
+    .third-row-hero{
+        transform: translateY(-65px);
     }
     .second-layer-band{
         transform: translateY(130px);
+    }
+    #about-me-start{
+        transform: translateY(-300px);
     }
 }
 
@@ -242,7 +257,7 @@ ul.navbar {
 */
 
 #about-me-start{
-    transform: translateY(-150px);
+    transform: translateY(-300px);
 }
 /* ==============
     ABOUT ME FOR LARGER SCREEN SIZES
@@ -260,13 +275,17 @@ ul.navbar {
 }
 .waves1 {
     background-image: url(/img/waves1.svg);
+    transform: translateY(-120px);
+
 }
 .waves2 {
     background-image: url(/img/waves2.svg);
 }
 
+.under-wave{
+    transform: translateY(-120px);
+}
 .about-me{
-    height: 1000px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -310,9 +329,6 @@ ul.navbar {
         ABOUT ME FOR PHONES up to 700px
     ===================*/
     .about-me{
-
-        height: 1000px;
-
         display: grid;
         justify-content: center;
         align-items: center;

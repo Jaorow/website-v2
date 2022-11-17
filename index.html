@@ -45,8 +45,9 @@
 
 
     <div class = "hero">
+
         <div class = "leftTop" id = "hero">
-            <h1 id = "center">
+            <h1>
                 Hi! <br> I'm Jamie 
             </h1>
             
@@ -54,8 +55,8 @@
 
         <div class = "rightTop" id = "hero">
             <canvas id="canvas"></canvas>
+            <script src = "scripts/nodes.js"></script>
         </div>
-        <script src = "scripts/nodes.js"></script>
 
         <div class="second-layer-band" >
             <a class="weatherwidget-io" href="https://forecast7.com/en/n36d85174d76/auckland/" data-label_1="AUCKLAND" data-label_2="WEATHER" data-font="Roboto Slab" data-icons="Climacons Animated" data-mode="Current" data-theme="original" >AUCKLAND WEATHER</a>
@@ -64,13 +65,25 @@
             </script>
         </div>
 
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+        <div class = "leftTop third-row-hero-left third-row-hero" id = "hero">
+            <h1>Theme</h1>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class = "rightTop third-row-hero-right third-row-hero" id = "hero">
+            <h2><span id="visits"></span> </h2>
+            <h2>Site Visits.</h2>
+        </div>
+
+
+        
+
     </div>
     
-    
+
 </div>
     <!-- 
             'HERO SECTION' END 
@@ -192,15 +205,8 @@
 
     </div>
 
-<!-- page counter upi -->
-<div>
-<h1>This site has been visited <span id="visits"></span> times.</h1>
-</div>
-
     <!-- footer to space bottom of page!  -->
     <div id="footer" />
-
-
 
         <!-- index page ends here... -->
 <script src = "scripts/loader.js"></script>
