@@ -9,11 +9,11 @@
 - [ ] fill pages
 - [ ] flex box stuff 
 - [ ] change owl blink time to be more natural 
-- [ ] add second graph thingy when viewport grows beond certian point
-- [ ] maybe change colours of graph thingy
+- [ ] add second node display when viewport grows beond certian point
+- [ ] maybe change colours of node display
 
 
 ### NOTES
 
 Owl ss size = 100 x 100 on saved 
-when changing owl stuff may need to start from the start or pos could be slightly off...
+when changing owl funct may need to start from the start or pos could be slightly off...
