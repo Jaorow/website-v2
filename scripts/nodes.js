@@ -12,6 +12,11 @@ window.requestAnimFrame = function()
 		);
 }();
 
+function changeParticleCount(count) {
+  particle_count = count;
+}
+
+
 var canvas = document.getElementById('canvas'); 
 var context = canvas.getContext('2d');
 
