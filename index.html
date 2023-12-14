@@ -17,6 +17,8 @@
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/cards.js"></script>
     <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/node_settings.js"></script>
+
 
 
 </head>
@@ -58,6 +60,9 @@
 
             <div class = "rightTop" id = "hero">
                 <canvas id="canvas"></canvas>
+                <div id="node-settings">
+                    <div onclick="open_node_settings()" id="node-settings-svg"></div>
+                </div>
                 <script src = "scripts/nodes.js"></script>
             </div>
 
@@ -73,10 +78,13 @@
             <!-- <script src = "scripts/theme-switch.js"></script> -->
 
 
-            <div class = "rightTop third-row-hero-right third-row-hero" id = "hero">
-                <h2><span id="visits">94</span> </h2>
-                <h2>Site Visits.</h2>
+            <div class = "rightTop third-row-hero-right third-row-hero hero" id="site-visits">
+                    <h2><span id="visits">94</span> </h2>
+                    <h2>Site Visits.</h2>
             </div>
+            <div class = "rightTop third-row-hero-right third-row-hero hidden hero" id="node-settings-div">
+                <h1>Settings</h1>
+        </div>
 
 
             

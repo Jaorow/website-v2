@@ -2,7 +2,7 @@
 const locations = [
     "home",
     "about",
-    "other",
+    // "other",
 ]
 
 //* function to load a page on window load.
