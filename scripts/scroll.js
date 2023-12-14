@@ -1,13 +1,12 @@
 const observer = new IntersectionObserver((entreis) => {
     entreis.forEach((entry) => {
-        // console.log(entry)
         if (entry.isIntersecting){
-            entry.target.classList.add('show')
+            entry.target.classList.add('shown-stack-item')
         } else {
-            entry.target.classList.remove('show')
+            entry.target.classList.remove('shown-stack-item')
         }
     })
 })
 
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll('hidden-stack-item');
 hiddenElements.forEach((el) => observer.observe(el));

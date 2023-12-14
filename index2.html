@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="img/me.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="img/me.png">
+
+    <link type="text/css" rel="stylesheet" href="styles/main.css"/>
+
+    <title>Home</title>
+
+    <script defer src="scripts/scroll.js"></script>
+    <script defer src="scripts/visits.js"></script>
+
+</head>
+<body class = "hide-bar">
+    <div id="loader" class="center"></div>
+
+    <!-- 
+            NAV BAR 
+            change class here when changing to diffrent pages 
+    -->
+    <ul class = "navbar stick">
+        <li><a href="/index.html" class="here">Home</a></li>
+        <li><a href="#about-me-start" >About</a> </li>
+        <li><a href="/Code.html" >Code</a></li>   
+        <div class ="navbar-Logo"> 
+            <img src="img/logo.png" id="blink" height="50">
+        </div>
+        <script src="scripts/logo_ch.js"></script>
+
+    </ul>
+    <!-- 
+            NAVBAR END
+
+            'HERO SECTION' START
+    -->
+
+
+<div class = "pad">
+
+
+    <div class = "hero">
+
+        <div class = "leftTop" id = "hero">
+            <h1>
+                Hi! <br> I'm Jamie 
+            </h1>
+            
+        </div>
+
+        <div class = "rightTop" id = "hero">
+            <canvas id="canvas"></canvas>
+            <script src = "scripts/nodes.js"></script>
+        </div>
+
+        <div class="second-layer-band">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n36d85174d76/auckland/" data-label_1="AUCKLAND" data-font="Courier New" data-icons="Climacons Animated" data-mode="Current" >AUCKLAND</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+        </div>
+
+        <div class = "leftTop third-row-hero-left third-row-hero" id = "hero">
+            <h1>Theme</h1>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <!-- <script src = "scripts/theme-switch.js"></script> -->
+
+
+        <div class = "rightTop third-row-hero-right third-row-hero" id = "hero">
+            <h2><span id="visits">52</span> </h2>
+            <h2>Site Visits.</h2>
+        </div>
+
+
+        
+
+    </div>
+    
+
+</div>
+    <!-- 
+            'HERO SECTION' END 
+    -->
+
+<div class = "spacer waves1" ></div>
+<div id = "about-me-start"></div>
+<div class = "under-wave" >
+    <h1> ABOUT ME </h1>
+    <p style = "padding-left: 10%; padding-right: 10%;">change the circles to images and put the writing beside, 
+        ultinate sides and animate on scroll... 
+        also have images for schooling change between dilworth and uni 
+        with some nice fade!</p>
+
+    
+    <div class = "about-me">
+        
+        <div class = 'about-me-circle' id = 'about-me-education'>
+            <div class = 'inner-circle'>
+                <p>Education</p>
+            </div>
+        </div>
+        <div class = "about-me-cards">
+            <p>Dilworth School</p>
+        </div>
+        <div class = "about-me-cards">
+            <p>Auckland University</p>
+        </div>
+
+
+
+        <div class = 'about-me-circle' id = 'about-me-goals'>
+            <div class = 'inner-circle'>
+                <p>Current Goals</p>
+            </div>
+        </div>  
+        <div class = "about-me-cards">
+            <p>Full Stack Dev</p>
+        </div>
+        <div class = "about-me-cards">
+            <p>find good goals</p>
+        </div>
+
+        <div class = 'about-me-circle' id = 'about-me-hobbies'>
+            <div class = 'inner-circle'>
+                <p>Projects</p>
+            </div>
+        </div>  
+        <div class = "about-me-cards">
+            <p>scraps</p>
+        </div>
+        <div class = "about-me-cards">
+            <p>music app</p>
+        </div>
+    </div> 
+</div>
+
+
+
+
+
+
+    <!-- add tech stack here, with animated on scroll -->
+    <div class = "spacer waves2"></div>
+
+    <div class = 'tech-stack-stack'>
+        <h1>TECH STACK</h1>
+        <br>
+
+        <div class = 'tech-stack hidden' id = 'front-end'>
+            <h3>Frontend</h3>
+
+            <span class = 'tecn-card hidden'>
+                <img id = 'tech-logo' src="img/techstack/html5.png" alt="tool">
+            </span>
+            <span class = 'tecn-card hidden'>
+                <img id = 'tech-logo' src="img/techstack/css.png" alt="tool">
+            </span>
+
+            <span class = 'tecn-card hidden'>
+                <img id = 'tech-logo' src="img/techstack/react.png" alt="tool">
+            </span>
+        </div>
+
+        <br>
+
+        <div class = 'tech-stack hidden' id = 'back-end'>
+            <h3>Backend</h3>
+
+            <span class = 'tecn-card hidden'>
+                <img id = 'tech-logo' src="img/techstack/python.png" alt="tool">
+            </span>
+            <span class = 'tecn-card hidden'>
+                <img id = 'tech-logo' src="img/techstack/java.svg" alt="tool" style="transform: translateY(30px);">
+            </span>
+            <span class = 'tecn-card hidden'>
+                <img id = 'tech-logo' src="img/techstack/c.png" alt="tool">
+            </span>
+        </div>
+
+        <br>
+
+        <br>
+
+        <div class = 'tech-stack hidden' id='tools'>
+            <h3>Tools & Frameworks</h3>
+
+            <span class = 'tecn-card hidden'>
+                <img class = "flask" id = 'tech-logo' src="img/techstack/flask.png" alt="tool">
+            </span>
+            <span class = 'tecn-card hidden'>
+                <img id = 'tech-logo' src="img/techstack/tensor.png" style="width: 200px; transform: translateY(20px);" alt="tool">
+            </span>
+            <span class = 'tecn-card hidden'>
+                <img id = 'tech-logo' src="img/techstack/sql.png" alt="tool">
+            </span>
+            <p>github, vs code, linux, ardwino, netlify, javascript, and im sure many more (:</p>
+        </div>
+
+    </div>
+
+    <!-- footer to space bottom of page!  -->
+    <div id="footer" />
+
+        <!-- index page ends here... -->
+<script src = "scripts/loader.js"></script>
+<a href="/test.html">test</a>
+</body>
+</html>

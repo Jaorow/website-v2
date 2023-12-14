@@ -14,203 +14,171 @@
 
     <script defer src="scripts/scroll.js"></script>
     <script defer src="scripts/visits.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/cards.js"></script>
+    <script defer src="scripts/weather.js"></script>
+
 
 </head>
 <body class = "hide-bar">
     <div id="loader" class="center"></div>
 
-    <!-- 
-            NAV BAR 
-            change class here when changing to diffrent pages 
-    -->
+<!-- 
+    *NAV BAR 
+-->
+
     <ul class = "navbar stick">
-        <li><a href="/index.html" class="here">Home</a></li>
-        <li><a href="#about-me-start" >About</a> </li>
-        <li><a href="/Code.html" >Code</a></li>   
+        <li><button id="homeButton" class="nav-button current-loc" onclick="setLocation('home')">Home</button></li>
+        <li><button id="aboutButton" class="nav-button" onclick="setLocation('about')">About</button></li>
+        <!-- <li><button id="otherButton" class="nav-button" onclick="setLocation('other')">Other</button></li> -->
+
         <div class ="navbar-Logo"> 
             <img src="img/logo.png" id="blink" height="50">
         </div>
         <script src="scripts/logo_ch.js"></script>
-
     </ul>
-    <!-- 
-            NAVBAR END
-
-            'HERO SECTION' START
-    -->
 
 
-<div class = "pad">
+<div id="home">
+
+<!-- 
+    * 'HERO SECTION'
+-->
+
+    <div class = "pad">
+
+        <div class = "hero-box">
+
+            <div class = "leftTop" id = "hero">
+                <h1>
+                    Hi! <br> I'm Jamie 
+                </h1>
+                
+            </div>
+
+            <div class = "rightTop" id = "hero">
+                <canvas id="canvas"></canvas>
+                <script src = "scripts/nodes.js"></script>
+            </div>
+
+            <div class = "leftTop third-row-hero-left third-row-hero" id = "hero">
+                <!-- <h1>Theme</h1>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label> -->
+                <!-- <h3>Weather</h3> -->
+                <div id="weather-div"></div>
+            </div>
+            <!-- <script src = "scripts/theme-switch.js"></script> -->
 
 
-    <div class = "hero">
+            <div class = "rightTop third-row-hero-right third-row-hero" id = "hero">
+                <h2><span id="visits">94</span> </h2>
+                <h2>Site Visits.</h2>
+            </div>
 
-        <div class = "leftTop" id = "hero">
-            <h1>
-                Hi! <br> I'm Jamie 
-            </h1>
+
             
+
         </div>
-
-        <div class = "rightTop" id = "hero">
-            <canvas id="canvas"></canvas>
-            <script src = "scripts/nodes.js"></script>
-        </div>
-
-        <div class="second-layer-band">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/n36d85174d76/auckland/" data-label_1="AUCKLAND" data-font="Courier New" data-icons="Climacons Animated" data-mode="Current" >AUCKLAND</a>
-            <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
-        </div>
-
-        <div class = "leftTop third-row-hero-left third-row-hero" id = "hero">
-            <h1>Theme</h1>
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
-        <!-- <script src = "scripts/theme-switch.js"></script> -->
-
-
-        <div class = "rightTop third-row-hero-right third-row-hero" id = "hero">
-            <h2><span id="visits">52</span> </h2>
-            <h2>Site Visits.</h2>
-        </div>
-
-
-        
-
     </div>
-    
 
-</div>
-    <!-- 
-            'HERO SECTION' END 
-    -->
+        <!-- 
+                * 'HERO SECTION' END 
+        -->
 
-<div class = "spacer waves1" ></div>
-<div id = "about-me-start"></div>
-<div class = "under-wave" >
-    <h1> ABOUT ME </h1>
-    <p style = "padding-left: 10%; padding-right: 10%;">change the circles to images and put the writing beside, 
-        ultinate sides and animate on scroll... 
-        also have images for schooling change between dilworth and uni 
-        with some nice fade!</p>
+    <div class = "spacer waves1" ></div>
+    <div class = "under-wave" >
+        <div class="projects">
 
-    
-    <div class = "about-me">
-        
-        <div class = 'about-me-circle' id = 'about-me-education'>
-            <div class = 'inner-circle'>
-                <p>Education</p>
+            <h1> Projects </h1>
+
+            <div id="project-cards-container">
+                <!-- this gets filled dynamically using js  -->
             </div>
-        </div>
-        <div class = "about-me-cards">
-            <p>Dilworth School</p>
-        </div>
-        <div class = "about-me-cards">
-            <p>Auckland University</p>
-        </div>
 
-
-
-        <div class = 'about-me-circle' id = 'about-me-goals'>
-            <div class = 'inner-circle'>
-                <p>Current Goals</p>
-            </div>
-        </div>  
-        <div class = "about-me-cards">
-            <p>Full Stack Dev</p>
         </div>
-        <div class = "about-me-cards">
-            <p>find good goals</p>
-        </div>
-
-        <div class = 'about-me-circle' id = 'about-me-hobbies'>
-            <div class = 'inner-circle'>
-                <p>Projects</p>
-            </div>
-        </div>  
-        <div class = "about-me-cards">
-            <p>scraps</p>
-        </div>
-        <div class = "about-me-cards">
-            <p>music app</p>
-        </div>
-    </div> 
+    </div>
 </div>
 
 
 
+    <div id="about" class="hidden">
+
+        <h1> ABOUT ME </h1>
 
 
-
-    <!-- add tech stack here, with animated on scroll -->
     <div class = "spacer waves2"></div>
 
-    <div class = 'tech-stack-stack'>
-        <h1>TECH STACK</h1>
-        <br>
+        <div class = 'tech-stack-stack'>
+            <h1>TECH STACK</h1>
+            <br>
 
-        <div class = 'tech-stack hidden' id = 'front-end'>
-            <h3>Frontend</h3>
+            <div class = 'tech-stack hidden-card-item' id = 'front-end'>
+                <h3>Frontend</h3>
 
-            <span class = 'tecn-card hidden'>
-                <img id = 'tech-logo' src="img/techstack/html5.png" alt="tool">
-            </span>
-            <span class = 'tecn-card hidden'>
-                <img id = 'tech-logo' src="img/techstack/css.png" alt="tool">
-            </span>
+                <span class = 'tech-card hidden-card-item'>
+                    <img id = 'tech-logo' src="img/techstack/html5.png" alt="tool">
+                </span>
+                <span class = 'tech-card hidden-card-item'>
+                    <img id = 'tech-logo' src="img/techstack/css.png" alt="tool">
+                </span>
 
-            <span class = 'tecn-card hidden'>
-                <img id = 'tech-logo' src="img/techstack/react.png" alt="tool">
-            </span>
+                <span class = 'tech-card hidden-card-item'>
+                    <img id = 'tech-logo' src="img/techstack/react.png" alt="tool">
+                </span>
+            </div>
+
+            <br>
+
+            <div class = 'tech-stack hidden-card-item' id = 'back-end'>
+                <h3>Backend</h3>
+
+                <span class = 'tech-card hidden-card-item'>
+                    <img id = 'tech-logo' src="img/techstack/python.png" alt="tool">
+                </span>
+                <span class = 'tech-card hidden-card-item'>
+                    <img id = 'tech-logo' src="img/techstack/java.svg" alt="tool" style="transform: translateY(30px);">
+                </span>
+                <span class = 'tech-card hidden-card-item'>
+                    <img id = 'tech-logo' src="img/techstack/c.png" alt="tool">
+                </span>
+            </div>
+
+            <br>
+
+            <br>
+
+            <div class = 'tech-stack hidden-card-item' id='tools'>
+                <h3>Tools & Frameworks</h3>
+
+                <span class = 'tech-card hidden-card-item'>
+                    <img class = "flask" id = 'tech-logo' src="img/techstack/flask.png" alt="tool">
+                </span>
+                <span class = 'tech-card hidden-card-item'>
+                    <img id = 'tech-logo' src="img/techstack/tensor.png" style="width: 200px; transform: translateY(20px);" alt="tool">
+                </span>
+                <span class = 'tech-card hidden-card-item'>
+                    <img id = 'tech-logo' src="img/techstack/sql.png" alt="tool">
+                </span>
+                <p>github, vs code, linux, ardwino, netlify, javascript, dotnet(c++) and im sure many more (:</p>
+            </div>
         </div>
 
-        <br>
-
-        <div class = 'tech-stack hidden' id = 'back-end'>
-            <h3>Backend</h3>
-
-            <span class = 'tecn-card hidden'>
-                <img id = 'tech-logo' src="img/techstack/python.png" alt="tool">
-            </span>
-            <span class = 'tecn-card hidden'>
-                <img id = 'tech-logo' src="img/techstack/java.svg" alt="tool" style="transform: translateY(30px);">
-            </span>
-            <span class = 'tecn-card hidden'>
-                <img id = 'tech-logo' src="img/techstack/c.png" alt="tool">
-            </span>
         </div>
-
-        <br>
-
-        <br>
-
-        <div class = 'tech-stack hidden' id='tools'>
-            <h3>Tools & Frameworks</h3>
-
-            <span class = 'tecn-card hidden'>
-                <img class = "flask" id = 'tech-logo' src="img/techstack/flask.png" alt="tool">
-            </span>
-            <span class = 'tecn-card hidden'>
-                <img id = 'tech-logo' src="img/techstack/tensor.png" style="width: 200px; transform: translateY(20px);" alt="tool">
-            </span>
-            <span class = 'tecn-card hidden'>
-                <img id = 'tech-logo' src="img/techstack/sql.png" alt="tool">
-            </span>
-            <p>github, vs code, linux, ardwino, netlify, javascript, and im sure many more (:</p>
-        </div>
-
     </div>
+
+    <div id="other" class="hidden">
+        <h1>OTHER</h1>
+    </div>
+
 
     <!-- footer to space bottom of page!  -->
     <div id="footer" />
 
         <!-- index page ends here... -->
 <script src = "scripts/loader.js"></script>
-<a href="/test.html">test</a>
+<a href="/test.html" style="display:none;">test</a>
 </body>
 </html>
